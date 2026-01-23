@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ish-vaqti-bot",
+  "private_key_id": "40d927e63be8ce47a00d5fab931bd6302593c137",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCeV/lLen74kLsh\nimjLV9VdWhTYY02nSi+g+sKhrr7fL8Hr5lEi/upGKgF+R2lClNHEtNSZ0m8xcVQE\nSUxPgu0GJlmRG0kKa8XEyEvV3cKWrFp9xzkWWDQCdxr7NseKEWztLLcGEkSXC4bT\nCkQmHzE5e3WiitIcQ0gMt8O+f209kDEbu7GVkiGzdMGwnmW27CHsEMYCKz2IvM9W\nt0eamozwG7AAKhNoYe7Z0om7pmEzevymfxTxKzBQ+nFmlGfL7orNnARoeBqxrOeS\ncQBZAgb5P0HQi+5mu94o27gqt/MRDdbNvH4WTqj0sj570QKqUa+Ht2y1Rbmi7SoT\nzh5FMLzbAgMBAAECggEAA0b2C+l4ua0VLATw7xrd4AhYDudCcvuGfNVAmsp140MN\nYNQfF2BU4CevNdPe8KSjETUrT67nsKUUN62xfKIzEahQvKYZ67NLU17p4uVFSVg/\nDzdeWrRv1YhtiiGAg76hYhwSaN4ouULHaZRe0LZe9T4CGaxR3CMWv9yimoC8qN3l\nltkIJmNwrt1LYhtQRGOaWu0Vb0yJXYzyzKE53Hc2SGNDpuCu7RmZpcivgzpwdZPg\n/tIs8zxKQ0sma4n680CnwCUsaEa6EpRL55mXW8MnPBsVEZNCtx0gF48pWw5Lonho\nASSx2+4xVHyCpGgmsSsU4DsYhCPdEBxhc9Y00bOnAQKBgQDM4r1zuAG9/HP3Cntp\nHLQC99UNv28yGm65xVln7Otv5CnhKeCAhe3qPNnpjG996mbb12gtjETk4EpFz/5k\nkhyL7YCgtlGRm0mz3S5c89CuvHR9WSENe+G/620kJvgtjf8jCb5vxf4uDwpkRWR3\n9+DmOzoR81wvokTAxeY+4OrsQQKBgQDF2MWozIEWp035pMwZHqj+sZo+3qKNpDlV\nNp5AvxJSfxU1B3I5/lyzRXx+1RVtb6rusymEwlp/wrW8QW3B6tpC+IsqzUPpjHdE\nfLwnVGl5mDsbdl+55FBqgrmsSF0LzaNCnBM7Q//D/4E2hQOzI6YTo51zD0wiNAX0\njLSjsX1SGwKBgQCWJReHJPKJ4uasxI658eHtRudoIsD/K6W3F+u0IEhNABy8uC6g\noQVAIgXjhBn0YYGtW8cpkeCvBbsIPCuGUhj/ZjZcEB/on688Uzt1vOtSEiMf9OAm\n/IDsXz/lPXWkFKpDaBGZ4bOq1zTbVIsS66FxtzeQDhKhib3us1hO/g7KwQKBgH1z\nmsISCrimlZb6nEBBZL87Nqcu3Lwbqg8Sdv5vKdsNohDiC9giJf22zd5OlyuxZx28\nlVMNOf1RJZOdmU8g8A0PNI+LYMiyvN28ikIWEFt939zmDoT89NDU248Ww4k8d41B\nEiC+WWualABSD6qDrEc/tBLFXG1Dt5L9tX0mimSJAoGAVXVgDNoteqUcPOfxuNlR\nhE5g4N9hWFT+VEe70GfKJ5rzWc+606Oy0h9tWD4MXyNJfoOERbjx9AZUGwh89LrN\nxn5spgEkk9dU6L8xOwaK7WC2k0Np8rKmyS+A7a5tHCZlIkJNPIWkvyskik8+yWSU\ngY2hOmXSxe2DEv4hOaf6kOg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ish-vaqti-bot@ish-vaqti-bot.iam.gserviceaccount.com",
+  "client_id": "112282050995923319353",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ish-vaqti-bot%40ish-vaqti-bot.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
