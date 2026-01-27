@@ -175,6 +175,7 @@ if txt in ["🔴 Ish tugadi", "🔴 End"]:
         await update.message.reply_text("❗ Avval 🟢 Ish boshlandi bosing.")
         return
 
+await update.message.reply_text(f"DEBUG: row={row}, sana={sana}")
     ws.update_acell(f"G{row}", vaqt)   # ✅ Tugadi
     # ws.update_acell(f"H{row}", "bor")  # ixtiyoriy
 
