@@ -75,15 +75,21 @@ async def on_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     uid = str(user.id)
 
-    if txt == "🟢 Ish boshlandi":
-        pending[uid] = "start"
-        await update.message.reply_text("📍 Lokatsiya yuboring", reply_markup=keyboard())
-        return
+    if txt in ["🟢 Ish boshlandi", "🟢 Start"]:
+    pending[uid] = "start"
+    await update.message.reply_text(
+        "📍 Lokatsiya yuboring",
+        reply_markup=keyboard()
+    )
+    return
 
-    if txt == "🔴 Ish tugadi":
-        pending[uid] = "end"
-        await update.message.reply_text("📍 Lokatsiya yuboring", reply_markup=keyboard())
-        return
+if txt in ["🔴 Ish tugadi", "🔴 End"]:
+    pending[uid] = "end"
+    await update.message.reply_text(
+        "📍 Lokatsiya yuboring",
+        reply_markup=keyboard()
+    )
+    return
 
     await update.message.reply_text("Tugmalardan foydalaning 👇", reply_markup=keyboard())
 
