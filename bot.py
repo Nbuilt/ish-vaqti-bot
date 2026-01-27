@@ -168,27 +168,28 @@ async def on_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("📍 Lokatsiya yuboring.")
         return
 
-    # END (lokatsiya shart emas)
-    if txt in ["🔴 Ish tugadi", "🔴 End"]:
-        row = find_today_row(phone, sana)
-        if not row:
-            await update.message.reply_text("❗ Avval 🟢 Ish boshlandi bosing.")
-            return
-
-        # RAW_DATA: G ustun - Tugadi
-        ws.update(f"G{row}", vaqt)
-
-        h, m, ball = get_today_stats(phone, sana)
-        warn = "\n⚠️ Diqqat! Ball minusda." if ball < 0 else ""
-
-        await update.message.reply_text(
-            f"✅ Ish tugadi!\n\n"
-            f"⏱ Bugun ishlagan vaqtingiz: {h} soat {m} minut\n"
-            f"⭐ Bugun jami ballingiz: {ball}{warn}\n\n"
-            "📊 Ma’lumotlar Sheets’ga yozildi.",
-            reply_markup=main_keyboard()
-        )
+# END (lokatsiya shart emas)
+if txt in ["🔴 Ish tugadi", "🔴 End"]:
+    row = find_today_row(phone, sana)
+    if not row:
+        await update.message.reply_text("❗ Avval 🟢 Ish boshlandi bosing.")
         return
+
+    ws.update_acell(f"G{row}", vaqt)   # ✅ Tugadi
+    # ws.update_acell(f"H{row}", "bor")  # ixtiyoriy
+
+    h, m, ball = get_today_stats(phone, sana)
+    warn = "\n⚠️ Diqqat! Ball minusda." if ball < 0 else ""
+
+    await update.message.reply_text(
+        f"✅ Ish tugadi!\n\n"
+        f"⏱ Bugun ishlagan vaqtingiz: {h} soat {m} minut\n"
+        f"⭐ Bugun jami ballingiz: {ball}{warn}\n\n"
+        "📊 Ma’lumotlar Sheets’ga yozildi.",
+        reply_markup=main_keyboard()
+    )
+    return
+
 
     await update.message.reply_text("Tugmalardan foydalaning 👇", reply_markup=main_keyboard())
 
